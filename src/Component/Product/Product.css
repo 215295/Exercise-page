@@ -1,0 +1,35 @@
+.product{
+    position: relative;
+    height: 510px;
+    width: 300px;
+    border: 2px solid salmon;
+    border-radius: 10px;
+   
+}
+.product-info{
+    margin:0 15px;
+}
+.product-info p,h5{
+  
+}
+.product img{
+  height: 200px;
+  width: 280px;
+  border-radius: 10px;
+  margin: 8px ;
+}
+.product-name{
+    
+}
+.btn-card{
+    position: absolute;
+    width: 100%;
+    background-color: salmon;
+    border-radius: 0 0 10px 10px;
+    border: none;
+    bottom: 0;
+}
+.btn-card:hover{
+   background-color: orange;
+    
+}

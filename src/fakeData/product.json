@@ -1,0 +1,64 @@
+ [
+        {  
+            "para":"Jogging is a form of trotting or running at a slow or leisurely pace. The main intention is to increase physical fitness with less stress on the body than ...",
+            "name":"Jogging" ,
+            "id":"1",
+            "time": "40",
+            "age": "30-26",
+            "type": "Regular",
+            "image":"https://static01.nyt.com/images/2022/08/03/well/FITNESS-WALKING-MEALS/FITNESS-WALKING-MEALS-jumbo.jpg?quality=75&auto=webp",
+            "isSelected":false
+        },
+        { 
+            
+            "para":"Jogging is a form of trotting or running at a slow or leisurely pace. The main intention is to increase physical fitness with less stress on the body than ...",
+            "name":"Jogging" ,
+            "id":"2",
+            "time": "30",
+            "age": "30-26",
+            "type": "Regular",
+            "image":"https://www.c-and-a.com/shop-img/c_scale,w_0.5,c_limit,w_1024/content/2020/walking-inhaltsverzeichnis.jpg",
+            "isSelected":false
+        },
+        {
+            "para":"Jogging is a form of trotting or running at a slow or leisurely pace. The main intention is to increase physical fitness with less stress on the body than ...",
+            "name":"Jogging" ,
+            "id":"3",
+            "time": "20",
+            "age": "30-26",
+            "type": "Regular",
+            "image":"https://physiotec.ca/ca/wp-content/uploads/2022/04/homepage-banner-tablet.jpg",
+            "isSelected":false
+        },
+        {
+            "para":"Jogging is a form of trotting or running at a slow or leisurely pace. The main intention is to increase physical fitness with less stress on the body than ...",
+            "name":"Jogging" ,
+            "id":"4",
+            "time": "30",
+            "age": "30-26",
+            "type": "Regular",
+            "image":"https://media.cnn.com/api/v1/images/stellar/prod/220726122213-04-exercise-long-life-wellness-stock.jpg?c=16x9&q=h_720,w_1280,c_fill",
+            "isSelected":false
+        },
+        {
+            "para":"Jogging is a form of trotting or running at a slow or leisurely pace. The main intention is to increase physical fitness with less stress on the body than ...",
+            "name":"Jogging" ,
+            "id":"5",
+            "time": "30",
+            "age": "30-26",
+            "type": "Regular",
+            "image":"https://static01.nyt.com/images/2022/08/03/well/FITNESS-WALKING-MEALS/FITNESS-WALKING-MEALS-jumbo.jpg?quality=75&auto=webp",
+            "isSelected":false
+        },
+        {"para":"Jogging is a form of trotting or running at a slow or leisurely pace. The main intention is to increase physical fitness with less stress on the body than ...",
+            "name":"Jogging" ,
+            "id":"6",
+            "time": "35",
+            "age": "30-26",
+            "type": "Regular",
+            "image":"https://www.c-and-a.com/shop-img/c_scale,w_0.5,c_limit,w_1024/content/2020/walking-inhaltsverzeichnis.jpg",
+            "isSelected":false
+        }
+    ]
+   
+   

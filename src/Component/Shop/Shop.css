@@ -1,0 +1,28 @@
+.shop-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+   
+}
+.header-icon{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 10px;
+}
+.header-icon img{
+    border-radius: 50%;
+    width: 50px;
+    background-color: rgb(119, 231, 147);
+    margin-right: 15px;
+}
+.product-container{
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 25px;
+  
+   margin:45px 80px  80px 80px;
+
+}
+.header-container{
+    margin: 0 80px;
+}

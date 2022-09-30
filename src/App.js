@@ -1,5 +1,6 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Shop from './Component/Shop/Shop';
 
 
 
@@ -7,7 +8,7 @@ function App() {
  
   return (
    <div>
-    <h1> i am here</h1>
+    <Shop></Shop>
    </div>
     
   );
