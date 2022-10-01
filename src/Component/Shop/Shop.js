@@ -5,14 +5,23 @@ import images from '../../images/1837.png';
 import './Shop.css';
 
 
-const Shop = () => {
-    const [products, setProducts] = useState([]);
 
-    useEffect(() => {
-        fetch('product.json')
-        .then(res=>res.json())
-        .then(data=> setProducts(data))
-    }, [])
+const Shop = () => {
+  const [products, setProducts] = useState([]);
+  const [card,setCard]=useState([]);
+
+  useEffect(() => {
+      fetch('product.json')
+      .then(res=>res.json())
+      .then(data=> setProducts(data))
+  }, [])
+
+  const handleAddCard=()=>{
+    console.log(products)
+    const newCard=[...card, products]
+    setCard(newCard);
+
+  }
     return (
         <div className='shop-container'>
 
@@ -21,7 +30,7 @@ const Shop = () => {
                 <div className='header-icon'>
                   <p><img src={images} alt="" /></p>
                   <h1>Different Style of Jogging</h1>
-                  </div>
+                </div>
             <h3>Select Today's Jogging Style</h3>
             </div>
               <div className='product-container'>
@@ -33,12 +42,14 @@ const Shop = () => {
               }
               </div>
         
-              
-           </div>
-           <div className="parent-container">
+
+              </div>
+           <div className="cart-container">
               <h1>anything</h1>
+              <p> select item:{card.length} </p>
             </div> 
-        </div>
+        </div>   
+
     );
 };
 
