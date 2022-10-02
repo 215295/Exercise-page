@@ -11,10 +11,10 @@ const Product = (props) => {
               <h2 className='product-name'>{name}</h2>
               <p><small>{para}</small></p>
               <h5>For Age : {age}yr </h5>
-              <h5>Time : {time}m </h5>
+              <h5>Time  Duration : {time}m </h5>
              
             </div>
-            <button className='btn-card'> 
+            <button onClick={()=> props.handleAddCard(props.product)} className='btn-card'> 
                 <p>Add to list</p>
             </button>
 
