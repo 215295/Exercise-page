@@ -3,8 +3,12 @@ import images from '../../images/images (5).jpg'
 import './Card.css'
 
 const Card = (props) => {
-    const {card}=props
-    console.log(card)
+  const {card}=props;
+console.log(card)
+  let total=0;
+  for (const product of card ){
+    total=total + product.time
+  }
 
     // let Exercise Time =0;
     // for (const product of card){
@@ -46,7 +50,8 @@ const Card = (props) => {
             <p>Exercise Details</p>
             <div className="input-field">
         <p>Exercise Time </p>
-        <p> select item:{card.length} </p>
+           <p> </p>
+        
                 
             </div>
             <div className="input-field">

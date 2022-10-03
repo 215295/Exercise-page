@@ -1,6 +1,6 @@
 .product{
     position: relative;
-    height: 510px;
+    height: 450px;
     width: 300px;
     border: 2px solid salmon;
     border-radius: 10px;
@@ -13,7 +13,7 @@
   
 }
 .product img{
-  height: 200px;
+  height: 150px;
   width: 280px;
   border-radius: 10px;
   margin: 8px ;

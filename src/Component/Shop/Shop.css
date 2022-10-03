@@ -11,9 +11,10 @@
 }
 .header-icon img{
     border-radius: 50%;
-    width: 50px;
+    width: 60px;
     background-color: rgb(119, 231, 147);
     margin-right: 15px;
+    margin-top: 10px;
 }
 .product-container{
     display: grid;
