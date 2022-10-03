@@ -45,11 +45,11 @@ const Card = () => {
                 <p>300s </p>
                 
             </div>
-            <div className="activity">
-                <button>
-                    Completed Activity
-                </button>
-            </div>
+                        
+            <button className="activity">
+                Completed Activity
+            </button>
+            
         </div>
        
       </div>

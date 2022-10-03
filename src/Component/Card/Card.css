@@ -1,5 +1,6 @@
 .card{
     background-color: sandybrown;
+    margin-bottom: 80px;
 }
 
 .card-container{
@@ -72,4 +73,11 @@
 }
 .input-field p{
     margin-right: 25px;
+}
+.activity{
+    color: aliceblue;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px ;
+    background-color: rgb(51, 93, 231);
 }
