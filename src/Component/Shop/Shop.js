@@ -23,7 +23,7 @@ const Shop = () => {
       console.log(products)
       const newCard=[...card, products]
       setCard(newCard);
-
+   console.log(card)
     }
     return (
         <div className='shop-container'>
@@ -53,7 +53,7 @@ const Shop = () => {
               
              
               <Card></Card>
-              <p> select item:{card.length} </p>
+              
            
         </div>
     );

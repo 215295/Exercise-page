@@ -2,7 +2,16 @@ import React from 'react';
 import images from '../../images/images (5).jpg'
 import './Card.css'
 
-const Card = () => {
+const Card = (props) => {
+    const {card}=props
+    console.log(card)
+
+    // let Exercise Time =0;
+    // for (const product of card){
+        
+    //     Exercise Time=Exercise Time + product.time
+    // }
+
     return (
       <div className="card">
         <div className="card-container">
@@ -36,8 +45,8 @@ const Card = () => {
             </div>
             <p>Exercise Details</p>
             <div className="input-field">
-                <p>Exercise Time</p>
-                <p>200s </p>
+        <p>Exercise Time </p>
+        <p> select item:{card.length} </p>
                 
             </div>
             <div className="input-field">
@@ -45,7 +54,9 @@ const Card = () => {
                 <p>300s </p>
                 
             </div>
-               {/* sgdsggsg          */}
+        
+           
+            
             <button className="activity">
                 Completed Activity
             </button>
