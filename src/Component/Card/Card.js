@@ -45,7 +45,7 @@ const Card = () => {
                 <p>300s </p>
                 
             </div>
-                        
+               {/* sgdsggsg          */}
             <button className="activity">
                 Completed Activity
             </button>
