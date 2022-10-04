@@ -3,19 +3,25 @@ import images from '../../images/images (5).jpg'
 import './Card.css'
 
 const Card = (props) => {
-  const {card}=props;
-console.log(card)
-  let total=0;
-  for (const product of card ){
-    total=total + product.time
+    
+//   const{card}=props;
+//   console.log(card)
+//   let total=0;
+//   let id=0;
+//   for(const product of card){
+//     total=total + product.time
+//     id=product.id
+  
+//   }
+  const card = props.card;
+  //const total = cart.reduce( (total, prd) => total + prd.price , 0 )
+  let total = 0;
+  for(let i = 0; i< card.length; i++){
+      const product = card[i];
+      total = total + product.time;
   }
-
-    // let Exercise Time =0;
-    // for (const product of card){
-        
-    //     Exercise Time=Exercise Time + product.time
-    // }
-
+  
+  
     return (
       <div className="card">
         <div className="card-container">
@@ -26,6 +32,7 @@ console.log(card)
                   <p>Bangladesh</p>
                </div>
             </div>
+            <p>select:{card.length} </p>
             <div className="bio-data">
                 <div className='bio'>
                     <h5>56 kg</h5>
@@ -49,14 +56,14 @@ console.log(card)
             </div>
             <p>Exercise Details</p>
             <div className="input-field">
-        <p>Exercise Time </p>
-           <p> </p>
+        <p>Exercise Time  </p>
+           <p>{total} </p>
         
                 
             </div>
             <div className="input-field">
                 <p>Break Time</p>
-                <p>300s </p>
+                <p> </p>
                 
             </div>
         

@@ -3,7 +3,8 @@
     top: 0;
     background-color: sandybrown;
     margin-bottom: 80px;
-    margin-top: 40px;
+    padding-top: 40px;
+    height: 580px;
 }
 
 .card-container{
