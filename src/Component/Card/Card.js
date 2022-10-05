@@ -1,18 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+
+
 import images from '../../images/images (5).jpg'
+import { addToDb } from '../../utilities/fakedb';
+import Toast from '../Toast/Toast';
+
+
+
 import './Card.css'
 
 const Card = (props) => {
     
-//   const{card}=props;
-//   console.log(card)
-//   let total=0;
-//   let id=0;
-//   for(const product of card){
-//     total=total + product.time
-//     id=product.id
-  
-//   }
+
   const card = props.card;
   //const total = cart.reduce( (total, prd) => total + prd.price , 0 )
   let total = 0;
@@ -20,8 +20,15 @@ const Card = (props) => {
       const product = card[i];
       total = total + product.time;
   }
-  
-  
+ 
+const [breakTime, setBreakTime]= useState(0);
+
+let breakTimeTotal = (value) => {
+   addToDb(value)
+    let sum = value;
+    setBreakTime(sum);
+    
+  };
     return (
       <div className="card">
         <div className="card-container">
@@ -32,7 +39,7 @@ const Card = (props) => {
                   <p>Bangladesh</p>
                </div>
             </div>
-            <p>select:{card.length} </p>
+            
             <div className="bio-data">
                 <div className='bio'>
                     <h5>56 kg</h5>
@@ -49,29 +56,25 @@ const Card = (props) => {
             </div>
             <p>Add A Break</p>
             <div className="break-container">
-                <button className='break-time'>10s</button>
-                <button className='break-time'>20s</button>
-                <button className='break-time'>30s</button>
-                <button className='break-time'>40s</button>
-            </div>
+        <button onClick={()=>breakTimeTotal(10)}  className='break-time'>10s</button>
+        <button onClick={()=>breakTimeTotal(20)} className='break-time'>20s</button>
+        <button onClick={()=>breakTimeTotal(30)} className='break-time'>30s</button>
+        <button onClick={()=>breakTimeTotal(40)} className='break-time'>40s</button>
+    </div>
             <p>Exercise Details</p>
             <div className="input-field">
         <p>Exercise Time  </p>
-           <p>{total} </p>
+           <p>{total}m </p>
         
                 
             </div>
             <div className="input-field">
                 <p>Break Time</p>
-                <p> </p>
+                <p>{breakTime} m</p>
                 
             </div>
-        
-           
-            
-            <button className="activity">
-                Completed Activity
-            </button>
+         
+            <Toast></Toast>
             
         </div>
        
@@ -80,3 +83,4 @@ const Card = (props) => {
 };
 
 export default Card;
+//sssssssssssssssss

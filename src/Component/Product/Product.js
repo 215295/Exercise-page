@@ -1,6 +1,7 @@
 import React from 'react';
 import './Product.css';
 
+
 const Product = (props) => {
    
     const {name,id,image,time,age,para}=props.product;
